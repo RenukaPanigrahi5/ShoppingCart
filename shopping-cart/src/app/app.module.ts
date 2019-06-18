@@ -10,7 +10,8 @@ import { ReceipesDetailComponent } from './receips/receipes-detail/receipes-deta
 import { ReceipesItemComponent } from './receips/receipes-list/receipes-item/receipes-item.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
-
+import { FormsModule } from '@angular/forms';
+import {CommonModule} from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,10 +22,13 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
     ReceipesItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
